@@ -1,5 +1,5 @@
-<div class="banner d-flex justify-content-between p-3 border-bottom">
-  <h1 class = "text-center">Wiki</h1>
+<div class="banner d-flex justify-content-between p-2 border-bottom sticky-top">
+  <h1 class = "text-center"><%= link_to  "Wiki", articles_path%></h1> 
   <div class="new_article">
     <button type="button" class="btn btn-primary"><%= link_to  "Add a new article", new_article_path %></button>
   </div>
@@ -28,8 +28,9 @@
 
     <% end%>
   </ul>
-  <div class="new_article">
-    <button type="button" class="btn btn-primary"><%= link_to  "Add a new article", new_article_path %></button>
+  <div class="new_article d-flex justify-content-beetween">
+    <button type="button" class="btn pmd-btn-fab pmd-ripple-effect btn-primary pmd-btn-raised"><%= link_to  "Add a new article", new_article_path %></button>
   </div>
+  
   </div>
 

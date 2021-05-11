@@ -4,6 +4,9 @@
 body {
   font-family: "Roboto Slab", sans-serif;
 }
+banner {
+  background-color: white;
+}
 a {
   text-decoration: none;
   // color: white;
@@ -15,7 +18,7 @@ button {
 }
 
 li {
-  margin: 1em;
+  padding: 1em;
   border-bottom: 1px solid rgb(221, 221, 221);
   padding-bottom: 18x;
 }
@@ -31,4 +34,21 @@ li {
 
 i {
   margin: 1px;
+}
+
+.far {
+  opacity: 0;
+}
+
+li:hover .far {
+  transition: 0.5s;
+  opacity:1;
+}
+
+.fa-trash-alt {
+  color: red;
+}
+
+.text-center a {
+  text-decoration: none;
 }
