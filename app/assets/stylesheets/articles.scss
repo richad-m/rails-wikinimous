@@ -1,0 +1,34 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  font-family: "Roboto Slab", sans-serif;
+}
+a {
+  text-decoration: none;
+  // color: white;
+  font-weight: bolder;
+}
+
+button {
+  color: white;
+}
+
+li {
+  margin: 1em;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding-bottom: 18x;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.new_article a {
+  color:white;
+}
+
+i {
+  margin: 1px;
+}

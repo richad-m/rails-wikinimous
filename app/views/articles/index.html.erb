@@ -1,0 +1,35 @@
+<div class="banner d-flex justify-content-between p-3 border-bottom">
+  <h1 class = "text-center">Wiki</h1>
+  <div class="new_article">
+    <button type="button" class="btn btn-primary"><%= link_to  "Add a new article", new_article_path %></button>
+  </div>
+
+</div>
+
+<div class="container m-0 w-100">
+
+  <ul class = "list-inline">
+    <% @articles.each do |article|%>
+    <li class = "d-flex justify-content-between">
+      <div>
+        <%= article.title %>
+        <%= link_to  "<i class='far fa-eye'></i>".html_safe, article_path(article.id) %>
+      </div>
+      <div>
+        <%= link_to  "<i class='far fa-edit'></i>".html_safe, edit_article_path(article.id) %>
+        <%= link_to "<i class='far fa-trash-alt'></i>".html_safe,
+                article_path(article),
+                method: :delete,
+                data: { confirm: "Are you sure?" } %>
+      </div>
+
+    </li>
+
+
+    <% end%>
+  </ul>
+  <div class="new_article">
+    <button type="button" class="btn btn-primary"><%= link_to  "Add a new article", new_article_path %></button>
+  </div>
+  </div>
+
